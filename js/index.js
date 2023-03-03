@@ -55,4 +55,12 @@ document.getElementById('btnCal').onclick = function tinhDienChu() {
 document.getElementById('btnSum').onclick = function tinhTong() {
     // input: num
     var num = +document.getElementById('number').value;
+    // output: tong2KySo
+    var tong2KySo = 0;
+    // process
+    var a = Math.floor ( num / 10 );
+    var b = num - (a * 10);
+    tong2KySo = a + b;
+    document.getElementById('txtSum').innerHTML = tong2KySo;
+
 }
